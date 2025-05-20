@@ -2,5 +2,9 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "devCommand": "npm start",
-  "root": "frontend"
+  "root": "frontend",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 } 
